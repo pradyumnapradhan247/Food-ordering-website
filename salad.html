@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="item.css">
+    <title>Order Salad</title>
+</head>
+<body>
+    <header>
+        <h1>Order Your Salad</h1>
+    </header>
+
+    <section id="order-form">
+        <h2>Select Your Salad</h2>
+        <form id="salad-order-form">
+            <label for="salad-base">Choose Salad Base:</label>
+            <select id="salad-base" name="salad-base" required>
+                <option>Select</option>
+                <option value="romaine">Romaine Lettuce</option>
+                <option value="spinach">Spinach</option>
+                <option value="mixed-greens">Mixed Greens</option>
+                <option value="kale">Kale</option>
+            </select>
+
+            <label for="toppings">Choose Toppings:</label>
+            <input type="checkbox" id="topping1" name="toppings" value="croutons">
+            <label for="topping1">Croutons</label><br>
+            <input type="checkbox" id="topping2" name="toppings" value="chicken">
+            <label for="topping2">Grilled Chicken</label><br>
+            <input type="checkbox" id="topping3" name="toppings" value="cheese">
+            <label for="topping3">Feta Cheese</label><br>
+            <input type="checkbox" id="topping4" name="toppings" value="nuts">
+            <label for="topping4">Nuts</label><br>
+            <input type="checkbox" id="topping5" name="toppings" value="avocado">
+            <label for="topping5">Avocado</label><br>
+
+            <label for="contact-name">Your Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Your Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Salad Order. All rights reserved.</p>
+    </footer>
+</body>
+</html>

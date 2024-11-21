@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="item.css">
+    <title>Order Pasta</title>
+</head>
+<body>
+    <header>
+        <h1>Order Your Pasta</h1>
+    </header>
+
+    <section id="order-form">
+        <h2>Select Your Pasta</h2>
+        <form id="pasta-order-form">
+            <label for="pasta-type">Choose Pasta Type:</label>
+            <select id="pasta-type" name="pasta-type" required>
+                <option>Select</option>
+                <option value="spaghetti">Spaghetti</option>
+                <option value="penne">Penne</option>
+                <option value="fettuccine">Fettuccine</option>
+                <option value="fusilli">Fusilli</option>
+            </select>
+
+            <label for="toppings">Choose Toppings:</label>
+            <input type="checkbox" id="topping1" name="toppings" value="meatballs">
+            <label for="topping1">Meatballs</label><br>
+            <input type="checkbox" id="topping2" name="toppings" value="mushrooms">
+            <label for="topping2">Mushrooms</label><br>
+            <input type="checkbox" id="topping3" name="toppings" value="cheese">
+            <label for="topping3">Extra Cheese</label><br>
+            <input type="checkbox" id="topping4" name="toppings" value="olives">
+            <label for="topping4">Olives</label><br>
+
+            <label for="contact-name">Your Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Your Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pasta Order. All rights reserved.</p>
+    </footer>
+</body>
+</html>

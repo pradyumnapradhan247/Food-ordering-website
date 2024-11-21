@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="item.css">
+    <title>Order Seafood Platter</title>
+</head>
+<body>
+    <header>
+        <h1>Order Your Seafood Platter</h1>
+    </header>
+
+    <section id="order-form">
+        <h2>Select Your Seafood Platter</h2>
+        <form id="seafood-order-form">
+            <label for="seafood-type">Choose Seafood Type:</label>
+            <select id="seafood-type" name="seafood-type" required>
+                <option>Select</option>
+                <option value="shrimp">Shrimp</option>
+                <option value="crab">Crab</option>
+                <option value="lobster">Lobster</option>
+                <option value="mixed-seafood">Mixed Seafood</option>
+            </select>
+
+            <label for="toppings">Choose Sides:</label>
+            <input type="checkbox" id="topping1" name="toppings" value="fries">
+            <label for="topping1">Fries</label><br>
+            <input type="checkbox" id="topping2" name="toppings" value="salad">
+            <label for="topping2">Salad</label><br>
+            <input type="checkbox" id="topping3" name="toppings" value="rice">
+            <label for="topping3">Rice</label><br>
+
+            <label for="contact-name">Your Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Your Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Seafood Order. All rights reserved.</p>
+    </footer>
+</body>
+</html>

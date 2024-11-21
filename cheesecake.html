@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="item.css">
+    <title>Order Cheesecake</title>
+</head>
+<body>
+    <header>
+        <h1>Order Your Cheesecake</h1>
+    </header>
+
+    <section id="order-form">
+        <h2>Select Your Cheesecake</h2>
+        <form id="cheesecake-order-form">
+            <label for="cheesecake-flavor">Choose Cheesecake Flavor:</label>
+            <select id="cheesecake-flavor" name="cheesecake-flavor" required>
+                <option>Select</option>
+                <option value="classic">Classic</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="blueberry">Blueberry</option>
+            </select>
+
+            <label for="toppings">Choose Toppings:</label>
+            <input type="checkbox" id="topping1" name="toppings" value="whipped-cream">
+            <label for="topping1">Whipped Cream</label><br>
+            <input type="checkbox" id="topping2" name="toppings" value="fruit">
+            <label for="topping2">Fresh Fruit</label><br>
+            <input type="checkbox" id="topping3" name="toppings" value="caramel">
+            <label for="topping3">Caramel Sauce</label><br>
+
+            <label for="contact-name">Your Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Your Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cheesecake Order. All rights reserved.</p>
+    </footer>
+</body>
+</html>

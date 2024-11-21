@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="item.css">
+    <title>Order Burger</title>
+</head>
+<body>
+    <header>
+        <h1>Order Your Burger</h1>
+    </header>
+
+    <section id="order-form">
+        <h2>Select Your Burger</h2>
+        <form id="burger-order-form">
+            <label for="burger-size">Choose Burger Size:</label>
+            <select id="burger-size" name="burger-size" required>
+                <option>Select</option>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="triple">Triple</option>
+            </select>
+
+            <label for="toppings">Choose Toppings:</label>
+            <input type="checkbox" id="topping1" name="toppings" value="lettuce">
+            <label for="topping1">Lettuce</label><br>
+            <input type="checkbox" id="topping2" name="toppings" value="tomato">
+            <label for="topping2">Tomato</label><br>
+            <input type="checkbox" id="topping3" name="toppings" value="cheese">
+            <label for="topping3">Cheese</label><br>
+            <input type="checkbox" id="topping4" name="toppings" value="bacon">
+            <label for="topping4">Bacon</label><br>
+
+            <label for="contact-name">Your Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Your Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Burger Order. All rights reserved.</p>
+    </footer>
+</body>
+</html>

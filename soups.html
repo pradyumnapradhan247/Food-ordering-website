@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="item.css">
+    <title>Order Soups</title>
+</head>
+<body>
+    <header>
+        <h1>Order Your Soups</h1>
+    </header>
+
+    <section id="order-form">
+        <h2>Select Your Soup</h2>
+        <form id="soup-order-form">
+            <label for="soup-type">Choose Soup Type:</label>
+            <select id="soup-type" name="soup-type" required>
+                <option>Select</option>
+                <option value="chicken-noodle">Chicken Noodle</option>
+                <option value="tomato">Tomato</option>
+                <option value="vegetable">Vegetable</option>
+                <option value="clam-chowder">Clam Chowder</option>
+            </select>
+
+            <label for="toppings">Choose Toppings:</label>
+            <input type="checkbox" id="topping1" name="toppings" value="crackers">
+            <label for="topping1">Crackers</label><br>
+            <input type="checkbox" id="topping2" name="toppings" value="parsley">
+            <label for="topping2">Parsley</label><br>
+            <input type="checkbox" id="topping3" name="toppings" value="cheese">
+            <label for="topping3">Cheese</label><br>
+
+            <label for="contact-name">Your Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Your Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Soup Order. All rights reserved.</p>
+    </footer>
+</body>
+</html>

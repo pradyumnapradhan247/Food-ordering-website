@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="item.css">
+    <title>Order Dessert</title>
+</head>
+<body>
+    <header>
+        <h1>Order Your Dessert</h1>
+    </header>
+
+    <section id="order-form">
+        <h2>Select Your Dessert</h2>
+        <form id="dessert-order-form">
+            <label for="dessert-type">Choose Dessert Type:</label>
+            <select id="dessert-type" name="dessert-type" required>
+                <option>Select</option>
+                <option value="cheesecake">Cheesecake</option>
+                <option value="brownie">Brownie</option>
+                <option value="tiramisu">Tiramisu</option>
+                <option value="ice-cream">Ice Cream</option>
+            </select>
+
+            <label for="toppings">Choose Toppings:</label>
+            <input type="checkbox" id="topping1" name="toppings" value="chocolate-syrup">
+            <label for="topping1">Chocolate Syrup</label><br>
+            <input type="checkbox" id="topping2" name="toppings" value="whipped-cream">
+            <label for="topping2">Whipped Cream</label><br>
+            <input type="checkbox" id="topping3" name="toppings" value="nuts">
+            <label for="topping3">Nuts</label><br>
+
+            <label for="contact-name">Your Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Your Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dessert Order. All rights reserved.</p>
+    </footer>
+</body>
+</html>
